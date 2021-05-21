@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple auth welcome</title>
+</head>
+<body>
+    
+    <h1>create new account</h1>
+    <form action="/insert" method="POST">
+        <input type="text" placeholder="ingrese el nombre" name="name">
+        <input type="text" placeholder="ingrese el email" name="email">
+        <input type="text" placeholder="ingrese la password" name="password">
+        <input type="text" placeholder="ingrese el rol" name="rol"> <!-- only: user and admin(lower case laz)-->
+        <button type="submit">send</button>
+    </form>
+
+    <h1>if u have account</h1>
+    <form action="/login" method="POST">
+        <input type="join your email" name="LEmail" placeholder="your saved email">
+        <input type="join your password" name="LPassword" placeholder="your saved password">
+        <button type="submit">join</button>
+    </form>
+</body>
+</html>
